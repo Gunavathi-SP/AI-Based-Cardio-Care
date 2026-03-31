@@ -14,3 +14,4 @@ Tech Stack:
   -Hardware  : ESP8266 (NodeMCU), MAX30102 PPG Sensor, DS18B20 Temp Sensor
   -Cloud/API : ThingSpeak IoT Platform, RESTful API Integration
   -Libraries : Pyttsx3, PySerial, Wire.h, DallasTemperature, ESP8266WiFi
+  
