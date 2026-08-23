@@ -1,17 +1,49 @@
-# AI-Based-Cardio-Care
-CardioCare is a comprehensive Healthcare IoT solution designed to bridge the gap between raw medical sensor data and proactive patient safety. Developed as a final-year project, this system transitions from high-fidelity hardware sensing to cloud-based historical tracking and real-time AI voice intervention.
-Key Features:
-Precision Hardware Sensing: Integrated MAX30102 (PPG) and DS18B20 sensors to capture high-fidelity Heart Rate, SpO2, and Body Temperature data.
+# ❤️ AI-Based CardioCare
 
-AI-Driven Voice Assistant: Features an automated alerting engine (via pyttsx3) that provides immediate spoken warnings for critical conditions (e.g., SpO2 < 94%).
+An IoT-based healthcare monitoring system designed to continuously monitor vital health parameters and provide real-time alerts when abnormal readings are detected.
 
-Cloud Connectivity: Seamless data streaming to the ThingSpeak IoT Cloud via REST API for remote monitoring and data logging.
+**CardioCare** bridges the gap between physical health sensors, cloud-based monitoring, and real-time alert mechanisms by combining **IoT hardware, Python, cloud connectivity, and automated voice alerts**.
 
-Emergency SOS Logic: A rule-based mechanism that triggers local buzzer feedback and remote alerts upon detecting abnormal cardiac patterns.
+---
 
-Tech Stack:
-  -Languages : Python (Alerting Engine), C++ (Arduino Firmware)
-  -Hardware  : ESP8266 (NodeMCU), MAX30102 PPG Sensor, DS18B20 Temp Sensor
-  -Cloud/API : ThingSpeak IoT Platform, RESTful API Integration
-  -Libraries : Pyttsx3, PySerial, Wire.h, DallasTemperature, ESP8266WiFi
-  
+## 🎯 Project Overview
+
+Monitoring vital health parameters continuously can help identify potentially dangerous conditions at an early stage.
+
+CardioCare is a final-year project that collects real-time health data using sensors connected to an **ESP8266 NodeMCU**, sends the data to the **ThingSpeak IoT Cloud** for remote monitoring and historical tracking, and provides immediate local and voice-based alerts when critical conditions are detected.
+
+The system monitors:
+
+❤️ Heart Rate  
+🫁 SpO₂ (Blood Oxygen Level)  
+🌡️ Body Temperature  
+
+---
+
+## ✨ Key Features
+
+### ❤️ Precision Health Monitoring
+
+Uses dedicated sensors to capture real-time vital parameters:
+
+- **MAX30102 PPG Sensor**
+  - Heart Rate
+  - SpO₂
+
+- **DS18B20 Temperature Sensor**
+  - Body Temperature
+
+### 🔊 AI-Assisted Voice Alerts
+
+Uses Python's **pyttsx3** library to generate automated voice warnings when predefined critical conditions are detected.
+
+For example:
+
+```text
+SpO₂ < 94%
+       ↓
+Critical condition detected
+       ↓
+Alert generated
+       ↓
+Voice warning played
